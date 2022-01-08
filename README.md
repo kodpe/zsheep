@@ -29,7 +29,7 @@ $ snails
 
 | | | status |
 |-|-|-|
-|           | global       | :heavy_check_mark: |
+|           | global       | :x: |
 | :compass: | gps          | :heavy_check_mark: |
 | :snail:   | sna / snails | :heavy_check_mark: |
 
