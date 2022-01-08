@@ -4,7 +4,7 @@
 
 [//]: # (This may be the most platform independent comment)
 
-<> (This is a comment, it will not be included)
+: <> (This is a comment, it will not be included)
 <> (in  the output file unless you use it in)
 <> (a reference style link.)
 
