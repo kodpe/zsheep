@@ -3,19 +3,8 @@
 [![platform](https://img.shields.io/badge/platform-linux%20macos-blue)]()
 
 <!---
-your comment goes here
-and here
+:warning: zsheep is under maintenance baaa
 -->
-
-[//]: # (This may be the most platform independent comment)
-
-: <> (This is a comment, it will not be included)
-<> (in  the output file unless you use it in)
-<> (a reference style link.)
-
-[comment]: <> (This is a comment, it will not be included)
-[comment]: <> (in  the output file unless you use it in)
-[comment]: <> (a reference style link.)
 
 ## How to install
 
