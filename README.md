@@ -27,7 +27,7 @@ $ snails
 
 ### zsheep status
 
-| | | status |
+| | | |
 |-|-|-|
 | :compass: | gps          | :heavy_check_mark: |
 | :compass: | gps          | :heavy_check_mark: |
