@@ -3,7 +3,8 @@ version="0-0-1"
 alias_path="~/.config/zsheep/zsheep_app/"
 if ! grep -q "zsheep_${version}" ~/.zshrc
 then
-	echo "# zsheep_${version} $(date) $(uname -s)" >> ~/.zshrc
+	echo "#" >> ~/.zshrc
+	echo "# zsheep_${version} $(uname -s) $(date)" >> ~/.zshrc
 	echo "# zsheep alias list" >> ~/.zshrc
 	echo 'alias gps="~/.config/zsheep/zsheep_app/42gps/gps"' >> ~/.zshrc
 	echo 'alias sna="~/.config/zsheep/zsheep_app/snails/snails.sh"' >> ~/.zshrc
@@ -20,8 +21,10 @@ then
 	fi
 	echo -e '\e[0;39m>> zsheep installed'
 	echo
-	echo 'How run snails'
+	echo '> How run snails'
 	echo -e "do '\e[1;32msna\e[0m' or '\e[1;32msnails\e[0m' in new terminal"
-	echo "or run ./snails.sh"
+	echo
+	echo '> How run gps'
+	echo -e "do '\e[1;32mgps e2r4p8\e[0m' in new terminal"
 	echo -ne "\e[0m"
 fi
