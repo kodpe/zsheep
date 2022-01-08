@@ -17,7 +17,7 @@ then open a new terminal to use zsheep
 ## commands
 
 ```
-Find your correction from the terminal
+42gps : Find your correction from the terminal
 
 $ gps e2r3p5
 ```
