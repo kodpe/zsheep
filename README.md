@@ -2,7 +2,7 @@
 
 [![platform](https://img.shields.io/badge/platform-linux%20macos-blue)]()
 
-[//]: (This may be the most platform independent comment)
+[/#/]: # (This may be the most platform independent comment)
 
 ## How to install
 
