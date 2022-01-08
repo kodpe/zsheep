@@ -11,6 +11,7 @@
 
 ```
 run ./install.sh
+then open a new terminal to use zsheep
 ```
 
 ## commands
