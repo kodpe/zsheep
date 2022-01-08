@@ -3,9 +3,9 @@
 [![platform](https://img.shields.io/badge/platform-linux%20macos-blue)]()
 
 <!---
-:warning: zsheep is under maintenance baaa everything can blow up :warning:
+:warning: zsheep is under maintenance baa everything can blaaw up :warning:
 -->
-:warning: zsheep is under maintenance baaa everything can blow up :warning:
+:warning: zsheep is under maintenance baa everything can blaaw up :warning:
 
 ## How to install
 
