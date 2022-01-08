@@ -9,7 +9,8 @@ then
 	echo 'alias gps="~/.config/zsheep/zsheep_app/42gps/gps"' >> ~/.zshrc
 	echo 'alias sna="~/.config/zsheep/zsheep_app/snails/snails.sh"' >> ~/.zshrc
 	echo 'alias snails="~/.config/zsheep/zsheep_app/snails/snails.sh"' >> ~/.zshrc
-
+	echo "#" >> ~/.zshrc
+	
 	if [ -d "${HOME}/.config" ]
 	then
 		mkdir ~/.config/zsheep
