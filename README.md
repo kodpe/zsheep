@@ -3,9 +3,9 @@
 [![platform](https://img.shields.io/badge/platform-linux%20macos-blue)]()
 
 <!---
-:warning: zsheep is under maintenance everything can blow up baaa :warning:
+:warning: zsheep is under maintenance baaa everything can blow up :warning:
 -->
-:warning: zsheep is under maintenance everything can blow up baaa  :warning:
+:warning: zsheep is under maintenance baaa everything can blow up :warning:
 
 ## How to install
 
@@ -34,7 +34,7 @@ $ snails
 
 | | | status |
 |-|-|-|
-|           | global       | :x: |
+|           | global       | :heavy_check_mark: |
 | :compass: | gps          | :heavy_check_mark: |
 | :snail:   | sna / snails | :heavy_check_mark: |
 
