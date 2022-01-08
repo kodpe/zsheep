@@ -34,7 +34,6 @@ $ snails
 
 | | | status |
 |-|-|-|
-|           | global       | :heavy_check_mark: |
 | :compass: | gps          | :heavy_check_mark: |
 | :snail:   | sna / snails | :heavy_check_mark: |
 
