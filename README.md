@@ -29,9 +29,9 @@ $ snails
 
 | | | status |
 |-|-|-|
-| :sheep:   | global zsheep | :heavy_check_mark: |
-| :compass: | gps           | :heavy_check_mark: |
-| :snail:   | sna / snails  | :heavy_check_mark: |
+|           | global       | :heavy_check_mark: |
+| :compass: | gps          | :heavy_check_mark: |
+| :snail:   | sna / snails | :heavy_check_mark: |
 
 ### To do / issues
 
