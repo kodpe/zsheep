@@ -5,7 +5,6 @@
 <!---
 :warning: zsheep is under maintenance baaa everything can blaaw up :warning:
 -->
-:warning: zsheep is under maintenance baaa everything can blaaw up :warning:
 
 ## How to install
 
