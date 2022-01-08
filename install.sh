@@ -1,8 +1,10 @@
 #!/bin/bash
 version="0-0-1"
+alias_path="~/.config/zsheep/zsheep_app/"
 if ! grep -q "zsheep_${version}" ~/.zshrc
 then
-	echo "#zsheep alias zsheep_${version} $(date) $(uname -s)"
+	echo "# zsheep_${version} $(date) $(uname -s)" >> ~/.zshrc
+	echo "# zsheep alias list" >> ~/.zshrc
 	echo 'alias gps="~/.config/zsheep/zsheep_app/42gps/gps"' >> ~/.zshrc
 	echo 'alias sna="~/.config/zsheep/zsheep_app/snails/snails.sh"' >> ~/.zshrc
 	echo 'alias snails="~/.config/zsheep/zsheep_app/snails/snails.sh"' >> ~/.zshrc
