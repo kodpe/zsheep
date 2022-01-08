@@ -1,0 +1,50 @@
+@echo off
+set ex=.\a.exe
+echo -- invalid --
+%ex%
+%ex% erp
+%ex% e0r0p0
+%ex% e10r10p10
+%ex% e1r0p10
+%ex% e2r0p10
+%ex% e3r0p10
+%ex% e2r13p15
+%ex% e1r1p150
+%ex% e3r3p200
+%ex% e2r4p24
+%ex% e1r10p24
+%ex% e3r12p24
+%ex% e1r10p0
+%ex% e2r10p0
+%ex% e3r10p0
+%ex% e3r13p20
+%ex% e4r1p1
+%ex% e1r12p0
+%ex% e3o20p2
+%ex% e2r2o2
+%ex% e1r10p29
+%ex% he1r10p29
+%ex% e1r1hp29
+%ex% e1111111
+%ex% e3r5p23
+%ex% e2r5p23
+echo -- valid --
+%ex% e1r10p10
+%ex% e2r10p10
+%ex% e3r10p10
+%ex% e2r10p19
+%ex% e2r4p23
+%ex% e1r10p23
+%ex% e3r12p23
+%ex% e3r2p13
+%ex% e2r2p2
+%ex% e1r1p1
+%ex% e2r2p2
+%ex% e1r5p23
+%ex% e1r6p20
+%ex% e2r6p20
+%ex% e3r6p20
+%ex% e1r6p8
+%ex% e2r6p8
+%ex% e3r6p8
+
