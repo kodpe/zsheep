@@ -27,18 +27,10 @@ $ snails
 
 ### zsheep status
 
-| global    |        | :white_check_mark: |
+| command   |        | status |
 |-|-|-|
-| :compass: | gps    | :warning: |
-| :snail:   | sna    | :heavy_check_mark: |
-| : snail:  | snails | :heavy_check_mark: |
-
-| global    |        | :green_circle: |
-|-|-|-|
-| :compass: | gps    | :orange_circle: |
-| :snail:   | sna    | :green_circle: |
-| : snail:  | snails | :red_circle: |
-
+| :compass: | gps          | :heavy_check_mark: |
+| :snail:   | sna / snails | :heavy_check_mark: |
 
 ### To do / issues
 

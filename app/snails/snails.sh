@@ -1,24 +1,4 @@
 #!/bin/bash
-if ! grep -q "snails.sh" ~/.zshrc
-then
-	echo 'alias sna="~/bin/snails.sh"' >> ~/.zshrc
-	echo 'alias snails="~/bin/snails.sh"' >> ~/.zshrc
-	if [ -d "${HOME}/bin" ]
-	then
-		cp snails.sh ~/bin
-	else
-		mkdir ~/bin
-		cp snails.sh ~/bin
-	fi
-	echo -e '\e[0;39m>> snails is installed'
-	echo
-	echo 'How run snails'
-	echo -e "do '\e[1;32msna\e[0m' or '\e[1;32msnails\e[0m' in new terminal"
-	echo "or run ./snails.sh"
-	echo -ne "\e[0m"
-	exit
-fi
-
 snr=(
 		"   .----.   @   @ "
 		"  / .---.\`.  \x5C_/  "
