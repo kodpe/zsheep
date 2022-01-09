@@ -11,6 +11,7 @@ then
 	echo 'alias gps="~/.config/zsheep/zsheep_app/42gps/gps"' >> ~/.zshrc
 	echo 'alias sna="~/.config/zsheep/zsheep_app/snails/snails.sh"' >> ~/.zshrc
 	echo 'alias snails="~/.config/zsheep/zsheep_app/snails/snails.sh"' >> ~/.zshrc
+	echo 'alias sky="~/.config/zsheep/zsheep_app/askyy/askyy_road"' >> ~/.zshrc
 	echo 'alias askyy="~/.config/zsheep/zsheep_app/askyy/askyy_road"' >> ~/.zshrc
 	echo "# zsheep_@kodpe" >> ~/.zshrc # se unistall
 	

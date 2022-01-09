@@ -32,6 +32,7 @@ $ snails
 ```
 Start askyy random night landscape generator
 
+$ sky
 $ askyy
 ```
 
@@ -43,7 +44,7 @@ $ askyy
 |-|-|-|
 | :compass:   | gps          | :heavy_check_mark: |
 | :snail:     | sna / snails | :heavy_check_mark: |
-| :milky_way: | askyy        | :heavy_check_mark: |
+| :milky_way: | sky / askyy  | :heavy_check_mark: |
 
 ### To do / issues
 
