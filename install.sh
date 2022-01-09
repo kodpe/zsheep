@@ -33,7 +33,7 @@ then
 	echo -e "do '\e[1;32mgps e2r4p8\e[0m' in new terminal"
 	echo
 	echo '> How run askyy'
-	echo -e "do '\e[1;32maskyy\e[0m' in new terminal"
+	echo -e "do '\e[1;32msky\e[0m' or '\e[1;32maskyy\e[0m' in new terminal"
 	echo
 	echo -ne "\e[0m"
 else
