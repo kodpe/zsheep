@@ -33,6 +33,8 @@ $ snails
 askyy random night landscape generator
 
 $ askyy
+```
+
 #
 
 ### zsheep status
