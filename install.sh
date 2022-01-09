@@ -24,12 +24,12 @@ then
 	fi
 	# cp files in .config/zsheep
 	cp -rf zsheep_app ~/.config/zsheep
-	cp -f uninstall.sh ~/.config/zsheep
 	cp -f LICENSE ~/.config/zsheep
-	# rm files in gcl
-	rm -rf zsheep_app
-	rm -rf zsheep_src
-	rm -rf ../zsheep
+	#cp -f uninstall.sh ~/.config/zsheep
+	#rm files in gcl
+	#rm -rf zsheep_app
+	#rm -rf zsheep_src
+	#rm -rf ../zsheep
 	echo -e "\e[1;32m(>o.o>) zsheep installed"
 	echo
 	echo '> How run snails'
