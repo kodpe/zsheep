@@ -30,7 +30,7 @@ $ snails
 ```
 
 ```
-askyy random night landscape generator
+Start askyy random night landscape generator
 
 $ askyy
 ```
