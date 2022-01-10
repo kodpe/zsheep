@@ -9,7 +9,7 @@
 ## How to install
 
 ```
-run ./install.sh
+run ./install
 
 then open a new terminal to use zsheep
 ```
