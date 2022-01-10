@@ -1,5 +1,5 @@
 ---
-name: zsheep bug report
+name: zsheep report
 about: Create a report to help us improve
 title: ''
 labels: ''
@@ -11,6 +11,7 @@ assignees: ''
 A clear and concise description of what the bug is.
 
 If you are currently at 42, what is your seat.
+
 OS / Shell / Terminal you used.
 
 **To Reproduce**
