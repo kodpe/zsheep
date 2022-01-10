@@ -1,9 +1,9 @@
 ---
 name: zsheep report
-about: Create a report to help us improve
+about: You have a question, issue or need help
 title: ''
-labels: ''
-assignees: ''
+labels: bug, help wanted, question
+assignees: kodpe
 
 ---
 
