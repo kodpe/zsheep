@@ -17,7 +17,7 @@ then open a new terminal to use zsheep
 ## commands
 
 ```
-Find your correction from the terminal with 42gps
+Find your correction from the terminal at 42Paris
 
 $ gps e2r3p5
 ```
@@ -30,7 +30,7 @@ $ snails
 ```
 
 ```
-Start askyy random night landscape generator
+Start askyy random night landscape
 
 $ sky
 $ askyy
@@ -48,4 +48,5 @@ $ askyy
 
 ### To do / issues
 
-- fix e2r5p7 gps
+- fix gps e2r5p7 / mark o
+- fix gps draw_inter invalid read

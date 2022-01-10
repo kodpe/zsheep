@@ -1,32 +1,33 @@
 #!/bin/bash
-echo -ne "\e[0m"
-version="0-0-1"
+version="0-1-1"
 alias_path="~/.config/zsheep/zsheep_app/"
+#
+cr="\e[1;31m"
+cg="\e[1;32m"
+cb="\e[1;34m"
+r="\e[0m"
 #
 sa=$(grep -n "# zsheep_${version}" ~/.zshrc)
 san=$(awk -F ":" '{print $1}' <<<${sa})
-
 se=$(grep -n "# zsheep_@kodpe" ~/.zshrc)
 sen=$(awk -F ":" '{print $1}' <<<${se})
-
 #echo "debug : $san $sen" | cat -e
-
 if (( ${#san} > 0 && ${#sen} > 0))
 then
 	sed -i"_backup" "${san},${sen}d" ~/.zshrc 
-	echo -e "\e[1;32m(>o.o>) zsheep uninstalled : aliases removed"
+	echo -e "${cg}(>o.o>) zsheep uninstalled : aliases removed${r}"
 else
-	echo -e "\e[1;31m(>o.o>) zsheep error : no aliases in ~/.zshrc"
+	echo -e "${cr}(>o.o>) zsheep error : no aliases in ~/.zshrc${r}"
 fi
-	
+#
 if [ -d "${HOME}/.config/zsheep" ]
 then
 	rm -rf ~/.config/zsheep
-	echo -e "\e[1;32m(>o.o>) zsheep uninstalled : files removed"
+	echo -e "${cg}(>o.o>) zsheep uninstalled : files removed${r}"
+	echo -e "${cg}(>o.o>) zsheep uninstalled${r}"
 else
-	echo -e "\e[1;31m(>o.o>) zsheep error : no ~/.config/zsheep"
-	echo -e "\e[1;31m(>o.o>) zsheep error : zsheep is not installed"
+	echo -e "${cr}(>o.o>) zsheep error : no ~/.config/zsheep${r}"
+	echo -e "${cr}(>o.o>) zsheep error : zsheep is not installed${r}"
 fi
 #
-echo -ne "\e[0m"
 exit

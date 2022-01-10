@@ -1,7 +1,11 @@
 #!/bin/bash
-echo -ne "\e[0m"
-version="0-0-1"
+version="0-1-1"
 alias_path="~/.config/zsheep/zsheep_app/"
+#
+cr="\e[1;31m"
+cg="\e[1;32m"
+cb="\e[1;34m"
+r="\e[0m"
 #
 if ! grep -q "zsheep_${version}" ~/.zshrc
 then
@@ -14,7 +18,7 @@ then
 	echo 'alias sky="~/.config/zsheep/zsheep_app/askyy/askyy_road"' >> ~/.zshrc
 	echo 'alias askyy="~/.config/zsheep/zsheep_app/askyy/askyy_road"' >> ~/.zshrc
 	echo "# zsheep_@kodpe" >> ~/.zshrc # se unistall
-	
+	#
 	if [ -d "${HOME}/.config" ]
 	then
 		mkdir ~/.config/zsheep
@@ -22,29 +26,26 @@ then
 		mkdir ~/.config
 		mkdir ~/.config/zsheep
 	fi
-	# cp files in .config/zsheep
 	cp -rf zsheep_app ~/.config/zsheep
 	cp -f LICENSE ~/.config/zsheep
-	#cp -f uninstall ~/.config/zsheep
-	#rm files in gcl
-	#rm -rf zsheep_app
-	#rm -rf zsheep_src
-	#rm -rf ../zsheep
-	echo -e "\e[1;32m(>o.o>) zsheep installed"
-	echo
-	echo '> How run snails'
-	echo -e "do '\e[1;32msna\e[0m' or '\e[1;32msnails\e[0m' in new terminal"
-	echo
-	echo '> How run gps'
-	echo -e "do '\e[1;32mgps e2r4p8\e[0m' in new terminal"
-	echo
-	echo '> How run askyy'
-	echo -e "do '\e[1;32msky\e[0m' or '\e[1;32maskyy\e[0m' in new terminal"
-	echo
-	echo -ne "\e[0m"
+	echo -e "${cg}(>o.o>) zsheep installed${r}"
+	echo -e "${cg}(>o.o>) Open a new terminal to use zsheep${r}"
 else
-	echo -e "\e[1;34m(>o.o>) zsheep install : zsheep already installed"
+	echo -e "${cb}(>o.o>) zsheep already installed${r}"
 fi
+# display zsheep manual
+esc=" "
+echo -e "${cb}(>o.o>) zsheep manual${r}"
+echo
+echo -e "${esc}$ ${cb}gps${r} e2r8p9"
+echo -e "${esc}  Find your correction at 42Paris"
+echo
+echo -e "${esc}$ ${cb}sna${r} or ${cb}snails${r}"
+echo -e "${esc}  Do snails run"
+echo
+echo -e "${esc}$ ${cb}sky${r} or ${cb}askyy${r}"
+echo -e "${esc}  Start askyy the random night landscape"
+echo
+echo -e "${cb}-----------------------------------${r}"
 #
-echo -ne "\e[0m"
 exit
