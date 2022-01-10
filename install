@@ -25,7 +25,7 @@ then
 	# cp files in .config/zsheep
 	cp -rf zsheep_app ~/.config/zsheep
 	cp -f LICENSE ~/.config/zsheep
-	#cp -f uninstall.sh ~/.config/zsheep
+	#cp -f uninstall ~/.config/zsheep
 	#rm files in gcl
 	#rm -rf zsheep_app
 	#rm -rf zsheep_src
