@@ -1,6 +1,6 @@
 # zsheep
 
-[![platform](https://img.shields.io/badge/platform-linux%20macos-blue)]()
+[![platform](https://img.shields.io/badge/platform-linux-blue)]()
 
 <!---
 :warning: zsheep is under maintenance baaa everything can blaaw up :warning:
