@@ -51,3 +51,4 @@ $ askyy
 - fix gps e2r5p7 / mark o
 - fix gps draw_inter invalid read
 - macOS compatibility
+- windows compatibility
