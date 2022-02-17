@@ -45,7 +45,7 @@ sloquet@student.42.fr
 x MacOs
 x Windows
 ```
-### :pushpin: To do
+### :hammer_and_wrench: To do
 ```
 - fix gps e2r5p7 / mark o
 - fix gps draw_inter invalid read
