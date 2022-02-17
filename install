@@ -1,52 +1,71 @@
 #!/bin/bash
-version="0-1-1"
-alias_path="~/.config/zsheep/zsheep_app/"
+version="0.2.7-b"
+alias_path="~/.local/zsheep/zsheep_app"
 #
 cr="\e[1;31m"
 cg="\e[1;32m"
 cb="\e[1;34m"
 r="\e[0m"
-#
+
+# 2-17-1829
+function man() {
+	esc=" "
+	echo -e "${cb}(>o.o>) zsheep usage${r}"
+	echo
+	echo -e "${esc}$ ${cb}gps${r} e2r8p9"
+	echo -e "${esc}  Find your correction at 42Paris"
+	echo
+	echo -e "${esc}$ ${cb}sna${r} or ${cb}snails${r}"
+	echo -e "${esc}  Do snails run"
+	echo
+	echo -e "${esc}$ ${cb}sky${r} or ${cb}askyy${r}"
+	echo -e "${esc}  Start askyy the random night landscape"
+	echo
+	echo -e "${esc}$ ${cb}color${r}"
+	echo -e "${esc}  Basic color scheme codes${r}"
+	echo
+	echo -e "${esc}$ ${cb}zhelp${r}"
+	echo -e "${esc}  Display this help${r}"
+	echo
+	echo -e "${esc}https://github.com/kodpe/zsheep 0.2.7-b${r}"
+	echo -e "${cb}-----------------------------------------${r}"
+}
+
+if [[ ! -f ~/.zshrc ]]; then
+	echo fatal error .zshrc not found
+	echo zsheep only works with zsh currently
+	exit 1
+fi
 if ! grep -q "zsheep_${version}" ~/.zshrc
 then
 	echo "#" >> ~/.zshrc
 	echo "# zsheep_${version} $(uname -s) $(date)" >> ~/.zshrc # sa uninstall
 	echo "# zsheep alias list" >> ~/.zshrc
-	echo 'alias gps="~/.config/zsheep/zsheep_app/42gps/gps"' >> ~/.zshrc
-	echo 'alias sna="~/.config/zsheep/zsheep_app/snails/snails.sh"' >> ~/.zshrc
-	echo 'alias snails="~/.config/zsheep/zsheep_app/snails/snails.sh"' >> ~/.zshrc
-	echo 'alias sky="~/.config/zsheep/zsheep_app/askyy/askyy_road"' >> ~/.zshrc
-	echo 'alias askyy="~/.config/zsheep/zsheep_app/askyy/askyy_road"' >> ~/.zshrc
-	echo 'color ="~/.config/zsheep/zsheep_app/color/color_scheme"' >> ~/.zshrc
+	echo "ZSHEEP_PATH=\"$alias_path\"" >> ~/.zshrc
+	echo 'alias gps="$ZSHEEP_PATH/42gps/gps"' >> ~/.zshrc
+	echo 'alias sna="$ZSHEEP_PATH/snails/snails"' >> ~/.zshrc
+	echo 'alias snails="$ZSHEEP_PATH/snails/snails"' >> ~/.zshrc
+	echo 'alias sky="$ZSHEEP_PATH/askyy/askyy_road"' >> ~/.zshrc
+	echo 'alias askyy="$ZSHEEP_PATH/askyy/askyy_road"' >> ~/.zshrc
+	echo 'alias color="$ZSHEEP_PATH/color/color_scheme"' >> ~/.zshrc
+	echo 'alias zhelp="$ZSHEEP_PATH/help/usage"' >> ~/.zshrc
 	echo "# zsheep_@kodpe" >> ~/.zshrc # se unistall
 	#
-	if [ -d "${HOME}/.config" ]
+	if [ -d "${HOME}/.local" ]
 	then
-		mkdir ~/.config/zsheep
+		mkdir ~/.local/zsheep
 	else
-		mkdir ~/.config
-		mkdir ~/.config/zsheep
+		mkdir ~/.local
+		mkdir ~/.local/zsheep
 	fi
-	cp -rf zsheep_app ~/.config/zsheep
-	cp -f LICENSE ~/.config/zsheep
+	cp -rf zsheep_app ~/.local/zsheep
+	cp -f LICENSE ~/.local/zsheep
 	echo -e "${cg}(>o.o>) zsheep installed${r}"
-	echo -e "${cg}(>o.o>) Open a new terminal to use zsheep${r}"
+	echo -e "${cg}(>o.o>) zsheep version ${version}${r}"
+	man
+	exec zsh
 else
 	echo -e "${cb}(>o.o>) zsheep already installed${r}"
+	man
 fi
-# display zsheep manual
-esc=" "
-echo -e "${cb}(>o.o>) zsheep manual${r}"
-echo
-echo -e "${esc}$ ${cb}gps${r} e2r8p9"
-echo -e "${esc}  Find your correction at 42Paris"
-echo
-echo -e "${esc}$ ${cb}sna${r} or ${cb}snails${r}"
-echo -e "${esc}  Do snails run"
-echo
-echo -e "${esc}$ ${cb}sky${r} or ${cb}askyy${r}"
-echo -e "${esc}  Start askyy the random night landscape"
-echo
-echo -e "${cb}-----------------------------------${r}"
-#
-exit
+exit 0

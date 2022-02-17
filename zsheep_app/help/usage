@@ -1,0 +1,31 @@
+#!/bin/bash
+#
+cr="\033[1;31m"
+cg="\033[1;32m"
+cb="\033[1;34m"
+r="\033[0m"
+esc=" "
+
+# 2-17-1926
+function usage() {
+	echo -e "${cb}(>o.o>) zsheep usage${r}"
+	echo
+	echo -e "${esc}$ ${cb}gps${r} e2r8p9"
+	echo -e "${esc}  Find your correction at 42Paris"
+	echo
+	echo -e "${esc}$ ${cb}sna${r} or ${cb}snails${r}"
+	echo -e "${esc}  Do snails run"
+	echo
+	echo -e "${esc}$ ${cb}sky${r} or ${cb}askyy${r}"
+	echo -e "${esc}  Start askyy the random night landscape"
+	echo
+	echo -e "${esc}$ ${cb}color${r}"
+	echo -e "${esc}  Basic color scheme codes${r}"
+	echo
+	echo -e "${esc}$ ${cb}zhelp${r}"
+	echo -e "${esc}  Display this help${r}"
+	echo
+	echo -e "${esc}https://github.com/kodpe/zsheep 0.2.7-b${r}"
+	echo -e "${cb}-----------------------------------------${r}"
+}
+usage

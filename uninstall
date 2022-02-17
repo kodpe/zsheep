@@ -1,6 +1,6 @@
 #!/bin/bash
-version="0-1-1"
-alias_path="~/.config/zsheep/zsheep_app/"
+version="0.2.7-b"
+alias_path="~/.local/zsheep/zsheep_app/"
 #
 cr="\e[1;31m"
 cg="\e[1;32m"
@@ -20,13 +20,13 @@ else
 	echo -e "${cr}(>o.o>) zsheep error : no aliases in ~/.zshrc${r}"
 fi
 #
-if [ -d "${HOME}/.config/zsheep" ]
+if [ -d "${HOME}/.local/zsheep" ]
 then
-	rm -rf ~/.config/zsheep
+	rm -rf ~/.local/zsheep
 	echo -e "${cg}(>o.o>) zsheep uninstalled : files removed${r}"
 	echo -e "${cg}(>o.o>) zsheep uninstalled${r}"
 else
-	echo -e "${cr}(>o.o>) zsheep error : no ~/.config/zsheep${r}"
+	echo -e "${cr}(>o.o>) zsheep error : no ~/.local/zsheep${r}"
 	echo -e "${cr}(>o.o>) zsheep error : zsheep is not installed${r}"
 fi
 #
