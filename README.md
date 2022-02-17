@@ -45,6 +45,7 @@ $ askyy
 | :compass:   | gps          | :heavy_check_mark: |
 | :snail:     | sna / snails | :heavy_check_mark: |
 | :milky_way: | sky / askyy  | :heavy_check_mark: |
+| :rainbow: | color  | :heavy_check_mark: |
 
 ### To do / issues
 
