@@ -31,7 +31,7 @@ $ color
 |-|-|-|
 | :compass:   gps          | :yellow_circle: | some places are unknown |
 | :snail:     sna / snails | :green_circle: | |
-| :milky_way: sky / askyy  | :green_circle: | |
+| :stars: sky / askyy  | :green_circle: | |
 | :rainbow:   color        | :green_circle: | |
 ###
 ### :warning: Issues
