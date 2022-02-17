@@ -1,4 +1,4 @@
-# zsheep
+# zsheep 0.2.8-beta
 
 [![platform](https://img.shields.io/badge/platform-linux-blue)]()
 
