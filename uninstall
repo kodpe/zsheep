@@ -1,11 +1,11 @@
 #!/bin/bash
-version="0.2.7-b"
+version="0.2.8-b"
 alias_path="~/.local/zsheep/zsheep_app/"
 #
-cr="\e[1;31m"
-cg="\e[1;32m"
-cb="\e[1;34m"
-r="\e[0m"
+cr="\033[1;31m"
+cg="\033[1;32m"
+cb="\033[1;34m"
+r="\033[0m"
 #
 sa=$(grep -n "# zsheep_${version}" ~/.zshrc)
 san=$(awk -F ":" '{print $1}' <<<${sa})

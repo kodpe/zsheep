@@ -25,7 +25,7 @@ function usage() {
 	echo -e "${esc}$ ${cb}zhelp${r}"
 	echo -e "${esc}  Display this help${r}"
 	echo
-	echo -e "${esc}https://github.com/kodpe/zsheep 0.2.7-b${r}"
+	echo -e "${esc}https://github.com/kodpe/zsheep 0.2.8-b${r}"
 	echo -e "${cb}-----------------------------------------${r}"
 }
 usage

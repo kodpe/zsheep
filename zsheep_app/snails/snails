@@ -41,12 +41,12 @@ snailslove() {
 		if [[ $z -eq 0 ]]; then newseed; fi
 		for (( h = 0; h < 5; h++ )); do 
 			for (( i = 0; i < $len - $z; i++ )); do echo -ne " "; done
-			echo -ne "\e[1;3${csnr}m"
+			echo -ne "\033[1;3${csnr}m"
 			echo -ne "${snr[$h]}"
 			for (( i = 0; i < $z * 2; i++ )); do echo -ne " "; done
-			if [[ $z -eq 0 && $h -eq 1 ]]; then echo -ne "\e[1;31m\u2665"; fi
+			if [[ $z -eq 0 && $h -eq 1 ]]; then echo -ne "\033[1;31m\u2665"; fi
 			if [[ $z -eq 0 && $h -ne 1 ]]; then echo -ne " "; fi
-			echo -ne "\e[1;3${csnl}m"
+			echo -ne "\033[1;3${csnl}m"
 			echo -ne "${snl[$h]}"
 			echo
 		done
@@ -56,10 +56,10 @@ snailslove() {
 	for (( z = 0; z < $len; z++ )); do 
 		for (( h = 0; h < 5; h++ )); do 
 			for (( i = 0; i < $len - $z; i++ )); do echo -ne " "; done
-			echo -ne "\e[1;3${csnr}m"
+			echo -ne "\033[1;3${csnr}m"
 			echo -ne "${snl[$h]}"
 			for (( i = 0; i < $z * 2; i++ )); do echo -ne " "; done
-			echo -ne "\e[1;3${csnl}m"
+			echo -ne "\033[1;3${csnl}m"
 			echo -ne "${snr[$h]}"
 			echo
 		done
@@ -67,12 +67,12 @@ snailslove() {
 		clear
 	done
 }
-echo -ne "\e[1;30m"
+echo -ne "\033[1;30m"
 clear
 for (( sna = 0; sna < 99; sna++ )); do
 	snailslove
 done 
-echo -ne "\e[0m"
+echo -ne "\033[0m"
 exit
 #for i in "${snail_right[@]}"; do echo -e $i; done #echo all elements
 #for (( i = 0; i < ${#snr[@]}; i++ )) do echo -e "${snr[$i]}"; done
