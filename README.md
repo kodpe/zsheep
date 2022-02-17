@@ -4,7 +4,7 @@
 <!---
 :warning: zsheep is under maintenance baaa everything can blaaw up :warning:
 -->
-**zsheep offers you useful and fun ascii art terminal commands for 42school**
+**zsheep offers you useful and fun ascii art terminal commands**
 ### :helicopter: How to install
 ```sh
 $ ./install
