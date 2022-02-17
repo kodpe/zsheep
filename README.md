@@ -29,7 +29,7 @@ $ color
 ### :vertical_traffic_light: Commands status
 | commands | status | informations |
 |-|-|-|
-| :compass:   gps          | :yellow_circle: | some places are unknown |
+| :compass:   gps          | :yellow_circle: | some places dont work properly |
 | :snail:     sna / snails | :green_circle: | |
 | :stars: sky / askyy  | :green_circle: | |
 | :rainbow:   color        | :green_circle: | |
